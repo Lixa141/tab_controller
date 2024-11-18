@@ -1,0 +1,35 @@
+name: appverse
+description: "Tab controller"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  json_annotation: ^4.9.0
+  intl: ^0.19.0
+
+
+  cupertino_icons: ^1.0.8
+  web: ^1.1.0
+  firebase_core: ^3.8.0
+  firebase_database: ^11.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.13
+  json_serializable: ^6.8.0
+  flutter_lints: ^4.0.0
+
+
+# The following section is specific to Flutter packages.
+flutter:
+  assets:
+    - assets/screen_1.json
+
+  uses-material-design: true
