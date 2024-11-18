@@ -1,16 +1,30 @@
-# appverse
+# Tab controller
 
-A new Flutter project.
+Приложение представляет собой простой клиент с двумя табами
 
-## Getting Started
+## JsonTab
 
-This project is a starting point for a Flutter application.
+Первый таб представляет собой содержимое локального файла screen_1.json
+Экран обновляется при смене элементов json'a (текст, размер и т.п.)
 
-A few resources to get you started if this is your first Flutter project:
+- Получение данных из файла
+- Конвертация их в модель для удобного использования
+- Маппинг в сущность для конфигурирования данных под себя
+- Вывод данных через UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## FirebaseTab
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Второй таб выгружает данные из базы данных с Firebase и в режиме realtime
+отображает элементы согласно объектам типа Task
+
+#### Как это сделано: 
+
+- Подключается БД к проекту
+- Получение данных
+- Конвертация в модель для удобного использования
+- Маппинг в сущность для конфигурирования данных под себя
+- Отслеживание изменений в БД (смена статуса на deleted)
+- Обновление UI согласно обновлённым данным
+
+Дополнительно сделано: При нажатии на любую ячейку показывается системный алерт,
+в котором отображается статус задачи 
